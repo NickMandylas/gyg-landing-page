@@ -176,20 +176,15 @@ const Donation = () => {
             const value = e.target.value;
 
             if (value === "") {
-              setDonationAmount(5);
-              dispatch({ type: "5-DOLLAR" });
+              e.target.value = 2;
             }
 
             if (Number(value) <= 1) {
               e.target.value = 2;
-              setDonationAmount(2);
-              dispatch({ type: "CUSTOM-DOLLAR" });
             }
 
             if (Number(value) > 9999) {
               e.target.value = 9999;
-              setDonationAmount(9999);
-              dispatch({ type: "CUSTOM-DOLLAR" });
             }
 
             setDonationAmount(e.target.value);
