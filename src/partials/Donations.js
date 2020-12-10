@@ -81,7 +81,7 @@ function Donations() {
           <div className="max-w-3xl mx-auto mt-12" data-aos="zoom-y-out">
             <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
               {/* Testimonial */}
-              <div className="text-center px-12 py-8 pt-20 ">
+              <div className="text-center px-12 py-8 pt-20">
                 <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
                   <img
                     className="relative rounded-full"
@@ -94,12 +94,13 @@ function Donations() {
                 <h4 className="h4 mb-5">Donating Stories</h4>
                 <blockquote className="text-lg font-small mb-4">
                   We're wanting to collect as many Greek stories as possible.
-                  Any memorable moments from whether it's your own or your
-                  grandparent's, please send through & grow our digital archive.
+                  Any memorable moments from whether it's your own, your
+                  grandparent's or your neighbour's will help grow our digital
+                  archive.
                 </blockquote>
                 <div>
                   <a
-                    className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto p-4"
+                    className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto p-4 mt-8"
                     href="mailto:hello@gyg.org.au"
                   >
                     Send us your story!

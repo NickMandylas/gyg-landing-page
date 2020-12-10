@@ -41,6 +41,7 @@ export const stripe_donate = functions.https.onRequest(
           if (!(amount >= 2 && amount <= 9999)) {
             throw new Error("Invalid amount.");
           }
+
           // Create Checkout Sessions from body params.
           const params: Stripe.Checkout.SessionCreateParams = {
             submit_type: "donate",
@@ -61,14 +62,11 @@ export const stripe_donate = functions.https.onRequest(
             params,
           );
 
-          response.set("Access-Control-Allow-Origin", "*");
           response.status(200).json(checkoutSession);
         } catch (err) {
-          response.set("Access-Control-Allow-Origin", "*");
           response.status(500).json({ statusCode: 500, message: err.message });
         }
       } else {
-        response.set("Access-Control-Allow-Origin", "*");
         response.setHeader("Allow", "POST");
         response.status(405).end("Method Not Allowed");
       }

@@ -62,7 +62,9 @@ function Newsletter() {
                         if (err) {
                           setResponse(err);
                         } else if (data.result !== "success") {
-                          setResponse("You've already subscribed!");
+                          setResponse(
+                            "An error occurred (or you're already subscribed).",
+                          );
                         } else {
                           setResponse("Thanks for subscribing!");
                         }

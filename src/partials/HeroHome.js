@@ -46,7 +46,7 @@ function HeroHome() {
             >
               Creating innovation through{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                greek culture
+                Greek culture
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
@@ -55,8 +55,8 @@ function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Greek Youth Generator is a non-for-profit organisation helping
-                young people experiment with their cultural identities.
+                The Greek Youth Generator is a non-for-profit organisation
+                helping young people experiment with their cultural identities.
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"

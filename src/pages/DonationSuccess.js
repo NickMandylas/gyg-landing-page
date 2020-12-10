@@ -5,7 +5,7 @@ function DonationSucess() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       {/* Hero content */}
-      <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+      <div className="pt-24 pb-12 md:pt-24 md:pb-20">
         {/* Section header */}
         <div className="text-center pb-12 md:pb-16">
           <h1
@@ -24,11 +24,20 @@ function DonationSucess() {
               data-aos-delay="150"
             >
               Thank you so much for your generous donation. We'll be sending you
-              a personal thank-you note & maybe even give you call to find out
-              the face behind the donation.
+              a personal thank-you note.{" "}
+              <b>Your donation has helped paint the mural below.</b> Improving
+              and spreading our heritage throughout the Yarraville local
+              community.
             </p>
+            <div data-aos="zoom-y-out" data-aos-delay="150">
+              <img
+                className="rounded-lg "
+                src={require("../images/mural_transition.png")}
+                alt="Mural Transition"
+              />
+            </div>
             <div
-              className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
+              className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center mt-8"
               data-aos="zoom-y-out"
               data-aos-delay="300"
             >
