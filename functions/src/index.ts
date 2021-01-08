@@ -38,7 +38,7 @@ export const stripe_donate = functions.https.onRequest(
         const amount: number = request.body.amount;
         try {
           // Validate the amount that was passed from the client.
-          if (!(amount >= 2 && amount <= 9999)) {
+          if (!(amount >= 1 && amount <= 9999)) {
             throw new Error("Invalid amount.");
           }
 

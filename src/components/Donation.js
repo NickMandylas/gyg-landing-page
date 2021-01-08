@@ -71,6 +71,7 @@ const Donation = () => {
         e.preventDefault();
         setLoading(true);
         // Create a Checkout Session.
+
         const response = await fetchPostJSON(
           "https://us-central1-greek-youth-generator.cloudfunctions.net/stripe_donate",
           {
@@ -176,11 +177,11 @@ const Donation = () => {
             const value = e.target.value;
 
             if (value === "") {
-              e.target.value = 2;
+              e.target.value = 1;
             }
 
-            if (Number(value) <= 1) {
-              e.target.value = 2;
+            if (Number(value) < 1) {
+              e.target.value = 1;
             }
 
             if (Number(value) > 9999) {

@@ -10,7 +10,7 @@ function Footer() {
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li className="ml-4">
               <a
-                href="https://www.facebook.com/gyg.inc"
+                href="https://www.facebook.com/greekyouthgenerator"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Facebook"
               >
@@ -25,9 +25,9 @@ function Footer() {
             </li>
             <li className="ml-4">
               <a
-                href="https://www.facebook.com/greekyouthgenerator"
+                href="https://instagram.com/greekyouthgenerator"
                 className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
-                aria-label="Facebook"
+                aria-label="Instagram"
               >
                 <svg
                   className="w-8 h-8 fill-current"
